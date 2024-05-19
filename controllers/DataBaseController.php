@@ -1,5 +1,4 @@
 <?php
-
 namespace App\controllers;
 use mysqli;
 
@@ -10,18 +9,21 @@ class DataBaseController {
     private $db = 'facturacion_tienda_db';
     private $conex;
 
-    function __construction () {
-        $this -> conex = new mysqli (
-            $this -> host, $this -> user, $this -> pwd, $this -> db
+    function __construct() {
+        $this->conex = new mysqli(
+            $this->host,
+            $this->user,
+            $this->pwd,
+            $this->db
         );
     }
 
-    function execSql ($sql) {
-        return $this -> conex -> query($sql);
+    function execSql($sql) {
+        return $this->conex->query($sql);
     }
 
-    function close () {
-        $this -> conex -> close();
+    function close() {
+        $this->conex->close();
     }
 }
 
