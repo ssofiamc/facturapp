@@ -19,6 +19,9 @@ class DataBaseController {
     }
 
     function execSql($sql) {
+        if ($this -> conex -> connect_error){
+            die("Conexión fallida: " . $this->conex->connect_error);
+        }
         return $this->conex->query($sql);
     }
 
@@ -26,6 +29,3 @@ class DataBaseController {
         $this->conex->close();
     }
 }
-
-
-

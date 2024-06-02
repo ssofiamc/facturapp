@@ -12,4 +12,11 @@ class UsuarioController {
         $db->close();
         return $cantidadRegistros>0;
     }
+
+    function validarSesion() {
+        session_start();
+        if (empty($_SESSION['iniciarSesion'])) {
+            header('Location: ../index.php');
+        }
+    }
 }
