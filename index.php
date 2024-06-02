@@ -3,17 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Facturas</title>
+        <link rel="icon" href="imagen/pluma.png">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Facturas Tienda Deportiva</title>
 </head>
 <body>
+    <h1>Inicio de Sesión</h1>
     <form action="views/validarInicioSesion.php" method="post">
-        <label for="">Usuario</label>
-        <input type="text" name="user" required>
+        <label class="ingreso" for="">Usuario: </label>
+        <input type="text" name="user" placeholder="Ingrese usuario" required>
         <br>
-        <label for="">Contraseña</label>
-        <input type="password" name="pwd" required>
+        <label class="ingreso" for="">Contraseña: </label>
+        <input type="password" name="pwd" placeholder="Ingrese contraseña" required>
         <br>
-        <button type="submit">Iniciar Sesión</button>
+        <button type="submit">Ingresar</button>
     </form>
 </body>
 </html>
