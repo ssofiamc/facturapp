@@ -1,0 +1,44 @@
+*{
+    background-color: #F1F0E8;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #153448;
+    background-color: #ADC4CE;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form { 
+    margin-top: 130px;
+    text-align: center;
+}
+
+.ingreso {
+    color: #153448;
+    font-size: 30px;
+    margin: 5px;
+}
+
+input {
+    font-size: 30px;
+    margin: 5px;
+}
+
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+    font-style: inherit;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ADC4CE;
+    color: #153448;
+    border-radius: 5px;
+    border-right: #153448;
+    border-left: #153448;
+    border-bottom: #153448;
+    border-top: #153448;
+}
